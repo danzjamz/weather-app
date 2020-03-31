@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from 'react';
+import { weatherReducer } from '../reducers/weather-reducers';
 
 export const WeatherContext = createContext();
 
