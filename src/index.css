@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.app-container {
+
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+svg {
+  padding: 0 1em;
+}
+.sun-icon {
+  color: darkgoldenrod;
+}
+.storm-icon {
+  color: gray;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-header {
+  padding-right: .5em;
+}
+.search-input {
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 1em;
+}
+.search-input:focus, .search-btn:focus {
+  outline: none;
+}
+.search-btn {
+  margin-left: .5em;
+  padding: 1em;
+  border: none;
+  background-color: cadetblue;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #C9E5E7;
+}
+
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-item {
+  margin: 1em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 8em;
+  box-shadow: 2px 2px 4px #888888;
 }
